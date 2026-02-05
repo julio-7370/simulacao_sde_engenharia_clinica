@@ -1,0 +1,92 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #e3f2fd);
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.controls {
+  width: 320px;
+  text-align: left;
+}
+
+.control-group {
+  margin-bottom: 15px;
+}
+
+.control-group label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #42a5f5;
+}
+
+.chart-card {
+  width: 650px;
+  position: relative;
+}
+
+.status {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.healthy { background: #c8e6c9; color: #2e7d32; }
+.warning { background: #fff9c4; color: #f9a825; }
+.failure { background: #ffcdd2; color: #c62828; }
+
+.buttons {
+  margin-top: 25px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 8px;
+  border: none;
+  border-radius: 8px;
+  background: #42a5f5;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #1e88e5;
+  transform: scale(1.05);
+}
