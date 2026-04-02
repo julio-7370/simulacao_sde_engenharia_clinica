@@ -24,12 +24,12 @@
 
       <div class="control-group">
         <label>Taxa de desgaste (μ): <span id="muVal"></span></label>
-        <input type="range" id="mu" min="0.001" max="0.05" value="0.01" step="0.001">
+        <input type="range" id="mu" min="0.001" max="0.05" value="0.003" step="0.001">
       </div>
 
       <div class="control-group">
         <label>Intensidade do ruído (σ): <span id="sigmaVal"></span></label>
-        <input type="range" id="sigma" min="0.01" max="0.2" value="0.08" step="0.01">
+        <input type="range" id="sigma" min="0.01" max="0.2" value="0.1" step="0.001">
       </div>
 
       <div class="control-group">
@@ -47,10 +47,17 @@
         <input type="range" id="predictiveInterval" min="10" max="200" value="50" step="10">
       </div>
 
+      <div class="control-group">
+        <label>Eficácia da manutenção corretiva (α): <span id="alphaVal"></span></label>
+        <input type="range" id="alpha" min="0.0" max="1.0" value="0.80" step="0.01">
+      </div>
+
+
     </div>
 
     <div class="card chart-card">
       <canvas id="simulationChart"></canvas>
+      <canvas id="probabilityChart"></canvas> 
       <div id="statusIndicator" class="status healthy">Estado: Saudável</div>
     </div>
 
